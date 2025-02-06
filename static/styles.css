@@ -1,22 +1,22 @@
-/* إعدادات عامة للصفحة */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #ffffff, #f9f9f9); /* تدرج خلفية فاتح */
-    color: #37474f; /* لون النص */
+    background: linear-gradient(135deg, #ffffff, #f9f9f9); 
+    color: #37474f; 
     line-height: 1.6;
     display: flex;
-    justify-content: center; /* توسيط أفقي */
-    align-items: center; /* توسيط عمودي */
-    height: 100vh; /* يجعل الصفحة تأخذ كامل ارتفاع الشاشة */
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
     flex-direction: column;
 }
 
 /* تصميم الهيدر */
 header {
     text-align: center;
-    background-color: #81d4fa; /* أزرق سماوي فاتح */
+    background-color: #81d4fa;  
     color: #37474f;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -80,7 +80,7 @@ section:hover {
 }
 
 section h3 {
-    color: #0288d1; /* أزرق متوسط */
+    color: #0288d1; 
     font-size: 1.8em;
     margin-bottom: 15px;
     border-bottom: 2px solid #81d4fa;
@@ -102,7 +102,7 @@ a:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #81d4fa; /* أزرق سماوي فاتح */
+    background-color: #81d4fa; 
     color: #37474f;
 }
 
