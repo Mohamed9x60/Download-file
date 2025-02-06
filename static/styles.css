@@ -1,1 +1,125 @@
+/* إعدادات عامة للصفحة */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffffff, #f9f9f9); /* تدرج خلفية فاتح */
+    color: #37474f; /* لون النص */
+    line-height: 1.6;
+    display: flex;
+    justify-content: center; /* توسيط أفقي */
+    align-items: center; /* توسيط عمودي */
+    height: 100vh; /* يجعل الصفحة تأخذ كامل ارتفاع الشاشة */
+    flex-direction: column;
+}
 
+/* تصميم الهيدر */
+header {
+    text-align: center;
+    background-color: #81d4fa; /* أزرق سماوي فاتح */
+    color: #37474f;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    font-weight: bold;
+}
+
+header h2 {
+    margin: 10px 0 0;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #0288d1;
+}
+
+/* تصميم الزر */
+.button {
+    padding: 10px 20px;
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #01579b;
+    transform: scale(1.05);
+}
+
+/* تصميم المحتوى الرئيسي */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* الأقسام */
+section {
+    flex: 1;
+    min-width: 300px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+section h3 {
+    color: #0288d1; /* أزرق متوسط */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #81d4fa;
+    padding-bottom: 5px;
+}
+
+/* روابط */
+a {
+    color: #0288d1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #01579b;
+}
+
+/* الفوتر */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #81d4fa; /* أزرق سماوي فاتح */
+    color: #37474f;
+}
+
+footer a {
+    color: #0288d1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #01579b;
+}
+
+/* استجابة الشاشات الصغيرة */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+}
