@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التقارير</title>
+    <link rel="stylesheet" href="/static/rep.css">
+</head>
+<body>
+    <!-- الهيدر -->
+    <header>
+        <h1>التقارير</h1>
+        <h2>إحصائيات حول الأجهزة والملفات</h2>
+    </header>
+
+    <!-- المحتوى الرئيسي -->
+    <main>
+        <section class="card">
+            <h3>إحصائيات النظام</h3>
+            <p>عدد الأجهزة المتصلة: <span class="highlight">{{ total_devices }}</span></p>
+            <p>عدد الملفات المرفوعة: <span class="highlight">{{ total_files }}</span></p>
+        </section>
+    </main>
+
+    <!-- الفوتر -->
+    <footer>
+        <p>© 2025 بواسطة <a href="https://facebook.com/profile.php?id=100014784496206&mibextid=ZbWKwL" target="_blank">محمد فؤاد</a></p>
+        <p><a href="https://www.google.com" style="color: red; text-decoration: none;">فلسطين حرة</a></p>
+    </footer>
+</body>
+</html>

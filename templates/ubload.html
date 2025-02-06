@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع تحميل الملفات</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/me">شوية معلومات عني  دوس  عليا </a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <h1>موقع تحميل الملفات ({{ files|length }} ملفات متاحة)</h1>
+        <h2>برمجة محمد فؤاد</h2>
+    </header>
+
+    <main>
+        <section id="files">
+            <h3>الملفات المتاحة للتحميل</h3>
+            <ul>
+                {% for file in files %}
+                <li>
+                    {{ file }}
+                    <a href="/download/{{ file }}">
+                        <button>تحميل</button>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+        <aside>
+            <h4>تواصل معنا</h4>
+            <ul>
+                <li><a href="https://github.com/Mohamed9x60" target="_blank"><img src="/static/github-icon.png" alt="GitHub"> GitHub</a></li>
+                <li><a href="https://facebook.com/profile.php?id=100014784496206&mibextid=ZbWKwL" target="_blank"><img src="/static/facebook-icon.png" alt="Facebook"> Facebook</a></li>
+                <li><a href="https://wa.me/+201021213274" target="_blank"><img src="/static/whatsapp-icon.png" alt="WhatsApp"> WhatsApp</a></li>
+                <li><a href="https://linkedin.com" target="_blank"><img src="/static/linkedin-icon.png" alt="LinkedIn"> LinkedIn</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p><a href="https://www.google.com" style="color: red; text-decoration: none;">فلسطين حرة</a></p>
+    </footer>
+</body>
+</html>
